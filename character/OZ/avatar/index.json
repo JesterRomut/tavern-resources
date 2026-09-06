@@ -10,5 +10,17 @@
     "desc": "1.4.0版本卡面。",
     "repo": "JesterRomut/tavern-resources",
     "path": "character/OZ/avatar/half_life.png"
+  },
+  {
+    "name": "So High",
+    "desc": "曾作为前端测试卡面。现已放出供大家使用。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/OZ/avatar/so_high.png"
+  },
+  {
+    "name": "按W思索",
+    "desc": "按W释放超能力。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/OZ/avatar/w_ponder.png"
   }
 ]
