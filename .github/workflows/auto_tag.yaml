@@ -1,0 +1,38 @@
+name: Auto Tag for jsDelivr
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch: # 允许手动触发
+
+# 赋予 Action 创建和删除 tag 的写权限
+permissions:
+  contents: write
+
+# 避免多个 push 同时运行时发生冲突
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 必须拉取完整提交历史，用于判断版本
+
+      # 自动生成并打上新的版本 tag (例如 v0.1.1, v0.1.2)
+      - name: Generate and Push New Tag
+        id: autotag
+        uses: phish108/autotag-action@v1.1.64
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          with-v: true # 是否带 'v' 前缀（如 v1.0.0）
+          strategy: patch # 默认每次 push 递增 patch 版本号（0.0.1 -> 0.0.2）
+
+      # (可选) 如果你想只保留最新 Tag、删除上一个旧 Tag，解开下面的注释：
+      - name: Delete Old Tag
+        if: ${{ steps.autotag.outputs.tag != '0.0.0' && steps.autotag.outputs.new-tag != steps.autotag.outputs.tag }}
+        run: git push --delete origin ${{ steps.autotag.outputs.tag }}
