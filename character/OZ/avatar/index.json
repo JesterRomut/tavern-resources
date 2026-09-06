@@ -1,0 +1,14 @@
+[
+  {
+    "name": "旧卡面",
+    "desc": "1.4.0之前的卡面…玩喵喵的结合玩的。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/OZ/avatar/legacy.png"
+  },
+  {
+    "name": "浅红半身",
+    "desc": "1.4.0版本卡面。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/OZ/avatar/half_life.png"
+  }
+]
