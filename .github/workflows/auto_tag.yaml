@@ -23,6 +23,29 @@ jobs:
         with:
           fetch-depth: 0 # 必须拉取完整提交历史，用于判断版本
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 自动扫描并构建包含 chr.manifest.json 的角色卡
+      - name: Build Character Cards
+        run: python scripts/build_character_cards.py
+
+      # 如果产物有变动，提交并推送到当前分支（带 [skip ci] 避免死循环）
+      - name: Commit Stitched Cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Detected generated card changes, committing..."
+            git add .
+            git commit -m "chore(card): auto build character cards [skip ci]"
+            git push origin HEAD:${{ github.ref_name }}
+          else
+            echo "No card changes detected."
+          fi
+
       # 自动生成并打上新的版本 tag (例如 v0.1.1, v0.1.2)
       - name: Generate and Push New Tag
         id: autotag
