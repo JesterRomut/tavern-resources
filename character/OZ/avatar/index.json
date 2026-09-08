@@ -22,5 +22,11 @@
     "desc": "按W释放超能力。",
     "repo": "JesterRomut/tavern-resources",
     "path": "character/OZ/avatar/w_ponder.png"
+  },
+  {
+    "name": "崇高性",
+    "desc": "你逐渐感到平静……",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/OZ/avatar/sublimity.png"
   }
 ]
