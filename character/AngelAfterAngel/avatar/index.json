@@ -1,0 +1,20 @@
+[
+  {
+    "name": "天使美食家",
+    "desc": "【路】旧约改人王本该是一部天使在各地寻找美味小牛犊的奇幻美食漫……结果……",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/AngelAfterAngel/avatar/lu_1.png"
+  },
+  {
+    "name": "大扫除",
+    "desc": "【米】我扫我扫我扫扫扫。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/AngelAfterAngel/avatar/mi_1.png"
+  },
+  {
+    "name": "群蛇形态",
+    "desc": "【拉】每当你打出一张卡牌，造成三点伤害。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/AngelAfterAngel/avatar/ra_1.png"
+  }
+]
