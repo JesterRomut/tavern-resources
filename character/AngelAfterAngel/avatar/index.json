@@ -13,8 +13,20 @@
   },
   {
     "name": "群蛇形态",
-    "desc": "【拉】每当你打出一张卡牌，造成三点伤害。",
+    "desc": "【拉】每当你打出一张卡牌，造成1点伤害。为什么数值这么低？因为东尼意思。",
     "repo": "JesterRomut/tavern-resources",
     "path": "character/AngelAfterAngel/avatar/ra_1.png"
+  },
+  {
+    "name": "守门人",
+    "desc": "【乌】困……",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/AngelAfterAngel/avatar/u_1.png"
+  },
+  {
+    "name": "四个天使",
+    "desc": "路、米、拉、萨。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/AngelAfterAngel/avatar/f4.png"
   }
 ]
