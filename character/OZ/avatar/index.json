@@ -28,5 +28,11 @@
     "desc": "你逐渐感到平静……",
     "repo": "JesterRomut/tavern-resources",
     "path": "character/OZ/avatar/sublimity.png"
+  },
+  {
+    "name": "你被脑控了！",
+    "desc": "邪恶的超能力者总是会脑控这一招，虽然很坏但非常好使。特别是脑控别人画出这张图片的时候。\n*“没用的，你躲不掉的。中了组织纠缠术的人如果没有解除，你这一辈子就完了。”*——《旧域怪诞》",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/OZ/avatar/mind_ctrl.png"
   }
 ]
