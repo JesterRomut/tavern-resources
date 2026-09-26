@@ -1,0 +1,32 @@
+[
+  {
+    "name": "旧卡面",
+    "desc": "2.0.0以前的卡面。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/Feiguangmon/avatar/legacy.png"
+  },
+  {
+    "name": "何处惹尘埃",
+    "desc": "哪怕吃的满地都是肉汁，也不会粘到身上……应该吧。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/Feiguangmon/avatar/pale.png"
+  },
+  {
+    "name": "浅红半身",
+    "desc": "小眼影不是很明显啊。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/Feiguangmon/avatar/half.png"
+  },
+  {
+    "name": "深红半身",
+    "desc": "烛龙血一滴滴落在地上，然后……",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/Feiguangmon/avatar/sm.png"
+  },
+  {
+    "name": "好可爱啊",
+    "desc": "哇，这个好可爱啊。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/Feiguangmon/avatar/cute.png"
+  }
+]
