@@ -28,5 +28,11 @@
     "desc": "哇，这个好可爱啊。",
     "repo": "JesterRomut/tavern-resources",
     "path": "character/Feiguangmon/avatar/cute.png"
+  },
+  {
+    "name": "活下去",
+    "desc": "只是希望大家可以永远活下去。",
+    "repo": "JesterRomut/tavern-resources",
+    "path": "character/Feiguangmon/avatar/live.png"
   }
 ]
